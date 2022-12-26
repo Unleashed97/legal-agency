@@ -1,0 +1,37 @@
+.m-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+
+    background-color: #000;
+    color: #fff;
+
+    transform: translateY(-110%);
+
+    transition: 0.3s linear;
+
+    &.active {
+        transform: translateY(0);
+    }
+    &__inner {
+        padding-top: 56px;
+        padding-bottom: 36px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__info-block {
+        .header__top-info {
+        }
+    }
+}

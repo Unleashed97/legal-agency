@@ -16,15 +16,48 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 197px;
+
+        @media (max-width: 576px) {
+            gap: 10px;
+        }
+    }
+
+    &__top-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-style: normal;
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+
+        &--m-menu {
+            flex-direction: column;
+            gap: 19px;
+
+            @media (max-width: 1200px) {
+                display: flex;
+            }
+        }
     }
 
     &__top-item {
         display: flex;
         align-items: center;
         gap: 10px;
+
+        &--info-text {
+            font-size: 1.4rem;
+            color: #c3c3c3;
+        }
     }
 
     &__top-whatsapp {
+        position: relative;
+        z-index: 10;
+
         display: flex;
         align-items: center;
         gap: 12px;
@@ -37,6 +70,11 @@
         border-radius: 33px;
 
         transition: 0.3s linear;
+
+        @media (max-width: 576px) {
+            padding: 9px 18px;
+            font-size: 1rem;
+        }
 
         &:hover {
             color: $colors-secondary;
@@ -57,15 +95,21 @@
         justify-content: space-between;
 
         padding: 10px 0 7px;
+    }
 
-        .btn-modal-open {
-            padding: 16px 35px;
+    .btn-modal-open {
+        padding: 16px 35px;
 
-            font-size: 1.6rem;
-            font-weight: 500;
+        font-size: 1.6rem;
+        font-weight: 500;
+        white-space: nowrap;
 
-            background-color: $colors-secondary;
-            border-radius: 28px;
+        background-color: $colors-secondary;
+        border-radius: 28px;
+
+        @media (max-width: 576px) {
+            font-size: 1rem;
+            padding: 10px 23px;
         }
     }
 }

@@ -1,8 +1,4 @@
 .nav {
-    &--header {
-        margin-left: auto;
-        margin-right: 65px;
-    }
     &__list {
         display: flex;
         align-items: center;
@@ -19,6 +15,25 @@
 
         &:hover {
             color: $colors-secondary;
+        }
+    }
+
+    &--header {
+        margin-left: auto;
+        margin-right: 65px;
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+    &--m-menu {
+        .nav__list {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 17px;
+        }
+        .nav__link {
+            padding: 0;
         }
     }
 }
