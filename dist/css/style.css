@@ -836,6 +836,105 @@ p {
     margin-bottom: 19px;
   }
 }
+.section--banner {
+  background-color: #efebe3;
+}
+.section--banner .section__inner {
+  position: relative;
+  min-height: 472px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 117px;
+  padding: 13px 0;
+}
+.section--banner .decor {
+  position: absolute;
+}
+.section--banner .decor--left {
+  left: -286px;
+  top: 0;
+  bottom: 50px;
+}
+.section--banner .decor--bottom {
+  z-index: -1;
+  bottom: -55px;
+  right: -286px;
+}
+.section--banner .section__text-block {
+  display: flex;
+  flex-direction: column;
+}
+.section--banner .section__title {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.section--banner .section__subtitle {
+  max-width: 700px;
+  margin-bottom: 45px;
+  font-size: 2.4rem;
+}
+.section--banner .section__btn {
+  width: 100%;
+  max-width: 288px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #e5c08c;
+  border-radius: 34px;
+  border: 1px solid #b89058;
+}
+.section--banner .section__contacts {
+  position: relative;
+  bottom: -28px;
+  width: 100%;
+  max-width: 345px;
+  padding: 14px 11px;
+  background-color: #fff;
+  border-radius: 24px;
+}
+.section--banner .section__contacts-inner {
+  padding: 34px 0 46px;
+  border: 1px solid #e5c08c;
+  border-radius: 24px;
+}
+.section--banner .section__contacts-title {
+  margin-bottom: 23px;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #141414;
+  text-align: center;
+}
+.section--banner .section__contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.section--banner .section__contacts-list-item {
+  padding: 18px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.section--banner .section__contacts-list-item .icon {
+  margin-right: 10px;
+}
+.section--banner .section__contacts-list-item .icon--whatsapp {
+  width: 29px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #e5c08c;
+  border-radius: 50%;
+}
 
 .services {
   display: grid;
