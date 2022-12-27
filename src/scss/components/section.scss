@@ -286,4 +286,27 @@
             }
         }
     }
+
+    &--payment {
+        background-color: #303030;
+
+        .section__inner {
+            position: relative;
+        }
+
+        .decor {
+            position: absolute;
+
+            left: -290px;
+            top: -41px;
+            z-index: -1;
+        }
+
+        .section__title {
+            margin-bottom: 41px;
+
+            color: $colors-secondary;
+            text-align: left;
+        }
+    }
 }
