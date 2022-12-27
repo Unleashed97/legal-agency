@@ -67,6 +67,10 @@
         .nav__link {
             white-space: nowrap;
             color: #fff;
+
+            &:hover {
+                color: $colors-secondary;
+            }
         }
     }
 }

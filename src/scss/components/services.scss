@@ -164,11 +164,22 @@
         &--outline {
             border: 1px solid $colors-highlight;
             color: $colors-highlight;
+            transition: 0.3s linear;
+
+            &:hover {
+                background-color: $colors-secondary;
+                color: #fff;
+            }
         }
 
         &--fill {
             background-color: $colors-secondary;
             color: $colors-text;
+            transition: 0.3s linear;
+
+            &:hover {
+                color: #fff;
+            }
         }
 
         @media (max-width: 992px) {

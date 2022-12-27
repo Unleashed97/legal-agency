@@ -107,6 +107,12 @@
         background-color: $colors-secondary;
         border-radius: 28px;
 
+        transition: color 0.3s linear;
+
+        &:hover {
+            color: #fff;
+        }
+
         @media (max-width: 576px) {
             font-size: 1rem;
             padding: 10px 23px;
