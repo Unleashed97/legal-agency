@@ -842,6 +842,7 @@ p {
 }
 .section--banner {
   background-color: #efebe3;
+  margin-bottom: 60px;
 }
 .section--banner .section__inner {
   position: relative;
@@ -1033,6 +1034,34 @@ p {
     height: 13px;
   }
 }
+.section--steps {
+  padding: 152px 0 157px;
+}
+@media (max-width: 576px) {
+  .section--steps {
+    padding: 95px 0 106px;
+  }
+}
+.section--steps .section__title {
+  margin-bottom: 44px;
+}
+@media (max-width: 576px) {
+  .section--steps .section__title {
+    margin-bottom: 27px;
+  }
+}
+.section--steps .section__content {
+  min-height: 293px;
+  display: flex;
+  gap: 21px;
+}
+@media (max-width: 1200px) {
+  .section--steps .section__content {
+    max-width: 500px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
 
 .services {
   display: grid;
@@ -1191,5 +1220,86 @@ p {
   .services__item-btn {
     max-width: 217px;
     height: 44px;
+  }
+}
+
+.card--steps {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 253px;
+  height: 262px;
+  padding: 0 17px;
+  background-color: #303030;
+  border-radius: 6px;
+}
+@media (max-width: 576px) {
+  .card--steps {
+    width: 205px;
+    height: 212px;
+    padding: 0 14px;
+  }
+}
+.card--steps:nth-child(even) {
+  align-self: flex-end;
+}
+.card--steps:last-child .card__icon {
+  right: 50%;
+  bottom: 0;
+  transform: rotate(-90deg) translate(50%, 50%);
+}
+.card--steps::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  bottom: -4px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #e5c08c;
+  border-radius: 6px;
+}
+.card--steps .card__icon {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+}
+@media (max-width: 576px) {
+  .card--steps .card__icon {
+    bottom: 7px;
+    right: 18px;
+    transform: rotate(90deg);
+  }
+}
+.card--steps .card__number {
+  display: block;
+  font-size: 6rem;
+  font-weight: 900;
+  color: #fff;
+}
+@media (max-width: 576px) {
+  .card--steps .card__number {
+    font-size: 4.8rem;
+  }
+}
+.card--steps .card__title {
+  margin-bottom: 15px;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #e5c08c;
+  text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  .card--steps .card__title {
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+  }
+}
+.card--steps .card__text {
+  color: #fff;
+}
+@media (max-width: 576px) {
+  .card--steps .card__text {
+    font-size: 1.4rem;
   }
 }

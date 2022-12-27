@@ -37,6 +37,8 @@
     &--banner {
         background-color: #efebe3;
 
+        margin-bottom: 60px;
+
         .section__inner {
             position: relative;
 
@@ -251,6 +253,36 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    &--steps {
+        padding: 152px 0 157px;
+
+        @media (max-width: 576px) {
+            padding: 95px 0 106px;
+        }
+
+        .section__title {
+            margin-bottom: 44px;
+
+            @media (max-width: 576px) {
+                margin-bottom: 27px;
+            }
+        }
+
+        .section__content {
+            min-height: 293px;
+
+            display: flex;
+            gap: 21px;
+
+            @media (max-width: 1200px) {
+                max-width: 500px;
+                flex-direction: column;
+
+                margin: 0 auto;
             }
         }
     }
