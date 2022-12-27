@@ -490,6 +490,51 @@ p {
   }
 }
 
+.footer {
+  padding: 40px 0 38px;
+  background-color: #000;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .footer__inner {
+    flex-direction: column;
+  }
+}
+.footer__top {
+  margin-bottom: 25px;
+}
+.footer__logo {
+  display: block;
+  margin-bottom: 25px;
+}
+.footer__bottom {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+@media (max-width: 992px) {
+  .footer__bottom {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  .footer__bottom {
+    gap: 25px;
+  }
+}
+.footer__info {
+  color: #fff;
+  font-size: 1.8rem;
+}
+.footer__info-text {
+  font-size: 1.8rem;
+}
+
 .container {
   max-width: 1370px;
   padding: 0 20px;
@@ -525,6 +570,28 @@ p {
 }
 .nav--m-menu .nav__link {
   padding: 0;
+}
+@media (max-width: 992px) {
+  .nav--footer .nav__item:first-child .nav__link {
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .nav--footer .nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .nav--footer .nav__link {
+    padding: 0;
+  }
+}
+.nav--footer .nav__item:last-child .nav__link {
+  padding-right: 0;
+}
+.nav--footer .nav__link {
+  white-space: nowrap;
+  color: #fff;
 }
 
 .burger {
@@ -1654,4 +1721,67 @@ p {
     width: 10px;
     height: 10px;
   }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.contacts__caption {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #e5c08c;
+}
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.contacts__list-item {
+  width: 228px;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #fff;
+  border-radius: 8px;
+  border: 1px solid #e5c08c;
+  transition: 0.3s linear;
+}
+.contacts__list-item:hover {
+  background-color: #e5c08c;
+}
+.contacts__list-item:hover .icon path {
+  fill: #fff;
+}
+.contacts__list-item:hover .icon--whatsapp {
+  border-color: #fff;
+}
+.contacts__list-item .icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts__list-item .icon--whatsapp {
+  border: 1px solid #e5c08c;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+.contacts__list-item .icon--whatsapp svg {
+  width: 12px;
+  height: 12px;
+}
+.contacts__list-item .icon--whatsapp svg path {
+  fill: #e5c08c;
+  transition: 0.3s linear;
+}
+.contacts__list-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 11px 10px 36px;
 }

@@ -1,0 +1,82 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    &__caption {
+        display: block;
+
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: $colors-secondary;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__list-item {
+        width: 228px;
+
+        display: flex;
+        align-items: center;
+
+        font-size: 1.6rem;
+        color: #fff;
+
+        border-radius: 8px;
+        border: 1px solid $colors-secondary;
+
+        transition: 0.3s linear;
+
+        &:hover {
+            background-color: $colors-secondary;
+
+            .icon path {
+                fill: #fff;
+            }
+
+            .icon--whatsapp {
+                border-color: #fff;
+            }
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &--whatsapp {
+                border: 1px solid $colors-secondary;
+                border-radius: 50%;
+
+                transition: 0.3s linear;
+
+                svg {
+                    width: 12px;
+                    height: 12px;
+                }
+
+                svg path {
+                    fill: $colors-secondary;
+
+                    transition: 0.3s linear;
+                }
+            }
+        }
+    }
+
+    &__list-link {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        padding: 10px 11px 10px 36px;
+    }
+}
