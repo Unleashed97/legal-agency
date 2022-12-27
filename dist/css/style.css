@@ -586,3 +586,224 @@ p {
     max-width: 150px;
   }
 }
+
+.showcase {
+  background-image: url("../img/showcase/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .showcase {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3)), url("../img/showcase/bg-sm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.showcase__inner {
+  padding: 114px 0 92px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .showcase__inner {
+    padding-bottom: 40px;
+    min-height: 1000px;
+  }
+}
+@media (max-width: 576px) {
+  .showcase__inner {
+    min-height: 708px;
+    padding-top: 43px;
+    padding-bottom: 20px;
+  }
+}
+.showcase__title {
+  position: relative;
+  margin-bottom: 40px;
+  font-size: 7.2rem;
+  font-weight: 900;
+  line-height: 1.24;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .showcase__title {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 576px) {
+  .showcase__title {
+    font-size: 3.2rem;
+    margin-bottom: 25px;
+  }
+}
+.showcase__title span {
+  font-size: 6.7rem;
+  font-weight: normal;
+}
+@media (max-width: 992px) {
+  .showcase__title span {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .showcase__title span {
+    font-size: 2.4rem;
+  }
+}
+.showcase__title::after {
+  content: "";
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  width: 140px;
+  height: 2px;
+  background-color: #e5c08c;
+}
+@media (max-width: 576px) {
+  .showcase__title::after {
+    bottom: -13px;
+  }
+}
+.showcase__subtitle {
+  margin-bottom: 68px;
+  font-size: 3.2rem;
+  line-height: 1.24;
+  color: #e5c08c;
+}
+@media (max-width: 576px) {
+  .showcase__subtitle {
+    font-size: 2.2rem;
+    margin-bottom: 37px;
+  }
+}
+.showcase__text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+  line-height: 1.24;
+  color: #fff;
+  text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  .showcase__text {
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+  }
+}
+.showcase__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  background-color: #e5c08c;
+  filter: blur(2px);
+  border-radius: 50%;
+}
+.showcase__icon::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #b89058;
+  border-radius: 50%;
+}
+.showcase__services {
+  padding: 13px 0 18px;
+  padding-right: 40px;
+  max-width: 734px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+@media (max-width: 768px) {
+  .showcase__services {
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 0;
+    background: none;
+    margin-top: auto;
+  }
+}
+@media (max-width: 576px) {
+  .showcase__services {
+    gap: 10px;
+  }
+}
+.showcase__services-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #e5c08c;
+}
+@media (max-width: 768px) {
+  .showcase__services-item:nth-child(1) {
+    align-self: flex-start;
+  }
+  .showcase__services-item:nth-child(3) {
+    align-self: flex-end;
+  }
+}
+@media (max-width: 576px) {
+  .showcase__services-item {
+    font-size: 1.2rem;
+  }
+}
+
+.form {
+  position: relative;
+}
+.form__input {
+  width: 100%;
+  height: 58px;
+  padding: 20px 270px 20px 23px;
+  font-size: 1.8rem;
+  color: #fff;
+  background: none;
+  border: 1px solid #e5c08c;
+  border-radius: 38px;
+  outline: none;
+}
+@media (max-width: 576px) {
+  .form__input {
+    padding: 11px 165px 11px 14px;
+    font-size: 1.2rem;
+    height: 34px;
+  }
+}
+.form__input::placeholder {
+  color: #676767;
+}
+.form__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 262px;
+  height: 58px;
+  font-size: 1.8rem;
+  color: #141414;
+  background-color: #e5c08c;
+  border-radius: 38px;
+  transition: 0.3s linear;
+}
+@media (max-width: 576px) {
+  .form__btn {
+    width: 156px;
+    font-size: 1.2rem;
+    height: 34px;
+  }
+}
+.form__btn:hover {
+  color: #fff;
+}
+.form--showcase {
+  width: 100%;
+  max-width: 532px;
+  margin-bottom: 77px;
+}

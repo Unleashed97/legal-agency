@@ -1,0 +1,68 @@
+.form {
+    position: relative;
+
+    &__input {
+        width: 100%;
+        height: 58px;
+
+        padding: 20px 270px 20px 23px;
+
+        font-size: 1.8rem;
+        color: #fff;
+
+        background: none;
+        border: 1px solid $colors-secondary;
+        border-radius: 38px;
+
+        outline: none;
+
+        @media (max-width: 576px) {
+            padding: 11px 165px 11px 14px;
+            font-size: 1.2rem;
+            height: 34px;
+        }
+
+        &::placeholder {
+            color: #676767;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 262px;
+        height: 58px;
+
+        font-size: 1.8rem;
+        color: $colors-text;
+
+        background-color: $colors-secondary;
+        border-radius: 38px;
+
+        transition: 0.3s linear;
+
+        @media (max-width: 576px) {
+            width: 156px;
+            font-size: 1.2rem;
+            height: 34px;
+        }
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &--showcase {
+        width: 100%;
+        max-width: 532px;
+
+        margin-bottom: 77px;
+    }
+}
