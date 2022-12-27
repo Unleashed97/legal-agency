@@ -52,6 +52,10 @@ p {
     color: $colors-secondary;
 }
 
+.text-uppercase {
+    text-transform: uppercase;
+}
+
 // components
 @import 'components/btn.scss';
 @import 'components/header.scss';

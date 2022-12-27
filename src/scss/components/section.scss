@@ -348,4 +348,106 @@
             }
         }
     }
+
+    &--about {
+        padding: 77px 0 160px;
+
+        .section__title {
+            margin-bottom: 56px;
+
+            text-align: left;
+
+            @media (max-width: 576px) {
+                margin-bottom: 27px;
+            }
+        }
+
+        .section__content {
+            position: relative;
+
+            @media (max-width: 992px) {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+            }
+        }
+
+        .section__text-block {
+            max-width: 730px;
+            margin-right: 500px;
+
+            @media (max-width: 992px) {
+                margin-right: 0;
+            }
+        }
+
+        .section__text {
+            margin-bottom: 40px;
+
+            font-size: 2rem;
+            line-height: 1.64;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 1.2rem;
+            }
+        }
+
+        .section__decor-bottom {
+            width: 100%;
+            height: 73px;
+
+            background-color: $colors-secondary;
+        }
+
+        .section__image-block {
+            position: absolute;
+            right: -290px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            @media (max-width: 1400px) {
+                right: -400px;
+            }
+
+            @media (max-width: 992px) {
+                position: static;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                transform: translateY(0);
+
+                margin-right: -20px;
+                margin-bottom: -30px;
+
+                .section__image {
+                    display: block;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .decor {
+            display: block;
+            margin-bottom: 7px;
+            margin-left: auto;
+
+            max-width: 345px;
+            width: 100%;
+            height: 3px;
+
+            background-color: $colors-secondary;
+
+            @media (max-width: 576px) {
+                max-width: 180px;
+                height: 2px;
+            }
+        }
+    }
 }
