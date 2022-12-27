@@ -290,6 +290,10 @@
     &--payment {
         background-color: #303030;
 
+        @media (max-width: 576px) {
+            padding-bottom: 32px;
+        }
+
         .section__inner {
             position: relative;
         }
@@ -307,6 +311,41 @@
 
             color: $colors-secondary;
             text-align: left;
+        }
+    }
+
+    &--advantages {
+        padding: 160px 0 86px;
+
+        background-color: #f8f8f8;
+
+        @media (max-width: 576px) {
+            padding: 108px 0 48px;
+        }
+
+        .section__title {
+            margin-bottom: 49px;
+
+            @media (max-width: 768px) {
+                text-align: left;
+            }
+        }
+
+        .section__content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            grid-auto-rows: auto;
+            gap: 54px 30px;
+
+            @media (max-width: 1400px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
         }
     }
 }

@@ -94,4 +94,81 @@
             }
         }
     }
+
+    &--advantages {
+        display: flex;
+
+        padding: 11px 7px 11px 14px;
+
+        background-color: #fff;
+        border-radius: 9px;
+
+        @media (max-width: 576px) {
+            flex: 1 0 0;
+        }
+
+        .card__image-block {
+            min-width: 119px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 576px) {
+                min-width: auto;
+                max-width: 88px;
+            }
+        }
+
+        .card__image {
+            display: block;
+            padding: 0 10px;
+
+            @media (max-width: 576px) {
+                max-width: 67px;
+                max-height: 66px;
+            }
+        }
+
+        .card__text-block {
+            display: flex;
+            flex-direction: column;
+            padding: 14px 0 14px 13px;
+
+            border-left: 3px solid #f8f8f8;
+
+            @media (max-width: 576px) {
+                justify-content: center;
+            }
+        }
+
+        .card__title {
+            flex: 1 0 0;
+            margin-bottom: 8px;
+
+            font-size: 2.2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+
+            @media (max-width: 992px) {
+                font-size: 1.8rem;
+            }
+
+            @media (max-width: 576px) {
+                margin-bottom: 5px;
+
+                font-size: 1.6rem;
+            }
+        }
+
+        .card__text {
+            flex: 1 0 0;
+            font-size: 1.6rem;
+            color: #424242;
+
+            @media (max-width: 576px) {
+                font-size: 1.2rem;
+            }
+        }
+    }
 }
