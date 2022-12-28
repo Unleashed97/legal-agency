@@ -25,15 +25,17 @@ export const handleNavScroll = () => {
 }
 
 export const handleModal = () => {
-    const modalOpenBtn = document.querySelector('.btn-modal-open')
+    const modalOpenBtnList = document.querySelectorAll('.btn-modal-open')
     const modalCloseBtn = document.querySelector('.modal__close')
     const modal = document.querySelector('.modal')
 
-    modalOpenBtn.addEventListener('click', () => {
-        modal.classList.add('active')
+    modalOpenBtnList.forEach((btn) =>
+        btn.addEventListener('click', () => {
+            modal.classList.add('active')
 
-        document.body.classList.add('fixed')
-    })
+            document.body.classList.add('fixed')
+        }),
+    )
 
     modalCloseBtn.addEventListener('click', () => {
         modal.classList.remove('active')

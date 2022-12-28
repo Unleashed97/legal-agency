@@ -72,7 +72,12 @@
         z-index: 1;
 
         .form__input {
+            padding-right: 145px;
             color: #000;
+        }
+
+        .form__btn {
+            max-width: 136px;
         }
     }
 }
