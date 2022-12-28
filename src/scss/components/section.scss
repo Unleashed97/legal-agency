@@ -317,6 +317,20 @@
             left: -290px;
             top: -41px;
             z-index: -1;
+
+            @media (max-width: 1300px) {
+                width: 90%;
+                left: -20px;
+            }
+
+            @media (max-width: 992px) {
+                top: -20px;
+            }
+
+            @media (max-width: 576px) {
+                width: 100%;
+                top: -29px;
+            }
         }
 
         .section__title {

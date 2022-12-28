@@ -687,6 +687,13 @@ p {
     background-size: cover;
   }
 }
+@media (max-width: 400px) {
+  .showcase {
+    background: url("../img/showcase/bg-sm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .showcase__inner {
   padding: 114px 0 92px;
   display: flex;
@@ -816,7 +823,7 @@ p {
 }
 @media (max-width: 576px) {
   .showcase__services {
-    gap: 10px;
+    gap: 6px;
   }
 }
 .showcase__services-item {
@@ -836,6 +843,11 @@ p {
 @media (max-width: 576px) {
   .showcase__services-item {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .showcase__services-item-icon img {
+    height: 32px;
   }
 }
 
@@ -1175,6 +1187,23 @@ p {
   left: -290px;
   top: -41px;
   z-index: -1;
+}
+@media (max-width: 1300px) {
+  .section--payment .decor {
+    width: 90%;
+    left: -20px;
+  }
+}
+@media (max-width: 992px) {
+  .section--payment .decor {
+    top: -20px;
+  }
+}
+@media (max-width: 576px) {
+  .section--payment .decor {
+    width: 100%;
+    top: -29px;
+  }
 }
 .section--payment .section__title {
   margin-bottom: 41px;

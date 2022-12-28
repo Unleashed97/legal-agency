@@ -10,6 +10,13 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    @media (max-width: 400px) {
+        background: url('../img/showcase/bg-sm.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
     &__inner {
         padding: 114px 0 92px;
         display: flex;
@@ -155,7 +162,7 @@
         }
 
         @media (max-width: 576px) {
-            gap: 10px;
+            gap: 6px;
         }
     }
 
@@ -177,6 +184,14 @@
 
         @media (max-width: 576px) {
             font-size: 1.2rem;
+        }
+    }
+
+    &__services-item-icon {
+        @media (max-width: 576px) {
+            img {
+                height: 32px;
+            }
         }
     }
 }
