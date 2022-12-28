@@ -1185,7 +1185,7 @@ p {
   display: flex;
   gap: 21px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .section--steps .section__content {
     max-width: 500px;
     flex-direction: column;
@@ -1565,14 +1565,18 @@ p {
 }
 .card--steps .card__icon {
   position: absolute;
-  bottom: 18px;
+  bottom: 10px;
   right: 18px;
+}
+@media (max-width: 1400px) {
+  .card--steps .card__icon {
+    transform: rotate(90deg);
+  }
 }
 @media (max-width: 576px) {
   .card--steps .card__icon {
     bottom: 7px;
     right: 18px;
-    transform: rotate(90deg);
   }
 }
 .card--steps .card__number {
@@ -1595,11 +1599,13 @@ p {
 }
 @media (max-width: 576px) {
   .card--steps .card__title {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-size: 1.6rem;
   }
 }
 .card--steps .card__text {
+  position: relative;
+  z-index: 1;
   color: #fff;
 }
 @media (max-width: 576px) {
