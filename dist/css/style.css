@@ -1532,17 +1532,21 @@ p {
   display: flex;
   flex-direction: column;
   width: 253px;
-  height: 262px;
-  padding: 0 17px;
+  min-height: 262px;
+  padding: 0 17px 30px;
   background-color: #303030;
   border-radius: 6px;
 }
 @media (max-width: 576px) {
   .card--steps {
     width: 205px;
-    height: 212px;
-    padding: 0 14px;
+    height: auto;
+    min-height: auto;
+    padding: 0 14px 30px;
   }
+}
+.card--steps:nth-child(odd) {
+  align-self: flex-start;
 }
 .card--steps:nth-child(even) {
   align-self: flex-end;
@@ -1550,7 +1554,7 @@ p {
 .card--steps:last-child .card__icon {
   right: 50%;
   bottom: 0;
-  transform: rotate(-90deg) translate(50%, 50%);
+  transform: rotate(-90deg) translate(0, 50%);
 }
 .card--steps::before {
   content: "";
@@ -1577,6 +1581,10 @@ p {
   .card--steps .card__icon {
     bottom: 7px;
     right: 18px;
+  }
+  .card--steps .card__icon svg {
+    width: 16px;
+    height: 27px;
   }
 }
 .card--steps .card__number {

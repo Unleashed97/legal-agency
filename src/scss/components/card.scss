@@ -6,18 +6,23 @@
         flex-direction: column;
 
         width: 253px;
-        height: 262px;
+        min-height: 262px;
 
-        padding: 0 17px;
+        padding: 0 17px 30px;
 
         background-color: #303030;
         border-radius: 6px;
 
         @media (max-width: 576px) {
             width: 205px;
-            height: 212px;
+            height: auto;
+            min-height: auto;
 
-            padding: 0 14px;
+            padding: 0 14px 30px;
+        }
+
+        &:nth-child(odd) {
+            align-self: flex-start;
         }
 
         &:nth-child(even) {
@@ -28,7 +33,7 @@
             .card__icon {
                 right: 50%;
                 bottom: 0;
-                transform: rotate(-90deg) translate(50%, 50%);
+                transform: rotate(-90deg) translate(0, 50%);
             }
         }
 
@@ -58,6 +63,11 @@
             @media (max-width: 576px) {
                 bottom: 7px;
                 right: 18px;
+
+                svg {
+                    width: 16px;
+                    height: 27px;
+                }
             }
         }
 
