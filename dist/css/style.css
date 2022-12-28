@@ -663,6 +663,10 @@ p {
   align-items: center;
   justify-content: space-between;
 }
+.logo {
+  display: block;
+  width: 253px;
+}
 .logo__image {
   display: block;
   max-width: 100%;
