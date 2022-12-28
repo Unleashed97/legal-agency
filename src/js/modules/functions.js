@@ -7,7 +7,12 @@ export const handleBurger = () => {
         mobileMenu.classList.toggle('active')
     })
 
-    window.addEventListener('click', ({ target }) => {})
+    window.addEventListener('click', ({ target }) => {
+        if (!target.closest('.m-menu') && target !== burgerBtn) {
+            burgerBtn.classList.remove('active')
+            mobileMenu.classList.remove('active')
+        }
+    })
 }
 
 export const handleNavScroll = () => {
