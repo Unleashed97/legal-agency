@@ -2,16 +2,17 @@ export const handleBurger = () => {
     const burgerBtn = document.querySelector('.burger')
     const mobileMenu = document.querySelector('.m-menu')
 
-    burgerBtn.addEventListener('click', () => {
+    burgerBtn.addEventListener('click', (e) => {
+        e.stopPropagation()
         burgerBtn.classList.toggle('active')
         mobileMenu.classList.toggle('active')
     })
 
-    window.addEventListener('click', ({ target }) => {
-        if (!target.closest('.m-menu') && target !== burgerBtn) {
-            burgerBtn.classList.remove('active')
-            mobileMenu.classList.remove('active')
-        }
+    document.addEventListener('click', ({ target }) => {
+        if (target.closest('.m-menu')) return
+
+        burgerBtn.classList.remove('active')
+        mobileMenu.classList.remove('active')
     })
 }
 
