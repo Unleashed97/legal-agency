@@ -42,6 +42,7 @@
 
         font-size: 1.8rem;
         color: $colors-text;
+        font-weight: 500;
 
         background-color: $colors-secondary;
         border-radius: 38px;
@@ -64,5 +65,14 @@
         max-width: 532px;
 
         margin-bottom: 77px;
+    }
+
+    &--modal {
+        position: relative;
+        z-index: 1;
+
+        .form__input {
+            color: #000;
+        }
     }
 }
