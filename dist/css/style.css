@@ -690,9 +690,10 @@ p {
 }
 @media (max-width: 768px) {
   .showcase {
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3)), url("../img/showcase/bg-sm.jpg");
+    background: url("../img/showcase/bg-md.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
 }
 @media (max-width: 400px) {
@@ -700,6 +701,7 @@ p {
     background: url("../img/showcase/bg-sm.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
 }
 .showcase__inner {
